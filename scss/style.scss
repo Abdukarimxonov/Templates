@@ -409,7 +409,6 @@ a{
 .about__container {
    display: flex;
    justify-content: center;
-   flex-wrap: wrap;
 }
 .about__img {
    flex: 0 1 27.39vw;
@@ -456,6 +455,9 @@ padding-right: 0.78125vw;
 line-height: 160%;
 }
 @media (max-width:1024px) {
+   .about__container{
+      flex-wrap: wrap;
+   }
    .about__img {
       flex: 0 1 27.39vw*1.5;
       height: 28.22vw*1.5;
@@ -486,7 +488,6 @@ line-height: 160%;
    .about {
       padding: 10.41vw 15.9vw*0.5 10.41vw 16.2vw*0.5;
    }
-
    .about__title {
       font-size: 26px;
       white-space: nowrap;

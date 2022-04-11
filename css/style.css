@@ -568,8 +568,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .about__img {
@@ -627,6 +625,10 @@ a {
 }
 
 @media (max-width: 1024px) {
+  .about__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .about__img {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 41.085vw;
