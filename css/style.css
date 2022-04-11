@@ -597,7 +597,7 @@ a {
   top: 0;
   left: 0;
   z-index: 0;
-  background-image: url("/img/about/bg.svg");
+  background-image: url("../img/about/bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
