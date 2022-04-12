@@ -674,3 +674,187 @@ a {
     padding-right: 0;
   }
 }
+
+.start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 16.25vw 10.416vw;
+}
+
+.start__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1.0416vw;
+}
+
+.start__logo {
+  padding-right: 1.0416vw;
+  width: 6.614vw;
+  height: 6.614vw;
+  text-align: right;
+}
+
+.start__logo img {
+  width: 4.988vw;
+  height: 4.988vw;
+}
+
+.start__title {
+  font-weight: 700;
+  font-size: 2.5vw;
+  line-height: 140%;
+}
+
+.start__text {
+  max-width: 21.4vw;
+  font-weight: 400;
+  font-size: 0.833vw;
+  line-height: 160%;
+  opacity: 0.5;
+}
+
+.start-diogram {
+  margin-top: 4.166vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.start-diogram__numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.start-diogram__number {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  font-weight: 700;
+  font-size: 1.875vw;
+  line-height: 140%;
+}
+
+.start-diogram__diogram {
+  margin-top: 1.041vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.start-diogram__diogram li {
+  background: -webkit-linear-gradient(355.74deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+  background: -o-linear-gradient(355.74deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+}
+
+.start-diogram__diogram li:nth-child(1) {
+  height: 4.166vw;
+}
+
+.start-diogram__diogram li:nth-child(2) {
+  height: 3.125vw;
+}
+
+.start-diogram__diogram li:nth-child(3) {
+  height: 1.5625vw;
+}
+
+.start-diogram__diogram li:nth-child(4) {
+  height: 0.52vw;
+}
+
+.start-diogram__text {
+  margin-top: 1.822vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.start-diogram__text li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  font-style: normal;
+  padding-right: 0.9375vw;
+  font-weight: 400;
+  font-size: 0.729vw;
+  line-height: 160%;
+  opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+  .start {
+    padding: 0 8.125vw 5.208vw;
+  }
+  .start__logo {
+    width: 13.228vw;
+    height: 13.228vw;
+  }
+  .start__logo img {
+    width: 9.976vw;
+    height: 9.976vw;
+  }
+  .start__title {
+    font-size: 5vw;
+  }
+  .start__text {
+    max-width: 42.8vw;
+    font-size: 1.666vw;
+  }
+  .start-diogram__number {
+    font-size: 3.75vw;
+  }
+  .start-diogram__text {
+    margin-top: 3.644vw;
+  }
+  .start-diogram__text li {
+    padding-right: 0.9375vw;
+    font-size: 1.458vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .start {
+    padding: 0 4.875vw 3.1248vw;
+  }
+  .start__title {
+    font-size: 7.5vw;
+  }
+  .start__text {
+    max-width: 64.2vw;
+    font-size: 2.499vw;
+  }
+  .start-diogram__number {
+    font-size: 5.625vw;
+  }
+  .start-diogram__text {
+    margin-top: 5.466vw;
+  }
+  .start-diogram__text li {
+    padding-right: 0.9375vw;
+    font-size: 2.187vw;
+  }
+}
