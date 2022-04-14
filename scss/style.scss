@@ -1,3 +1,9 @@
+$maxWidth: 1920;
+@mixin adaptive-value($property, $startSize, $minSize) {
+   $addSize: $startSize - $minSize;
+   #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+}
+
 *,*::before,*::after{
    box-sizing: border-box;
    padding: 0;
@@ -632,5 +638,64 @@ font-size: 1.875vw*2;
          padding-right:0.9375vw;
          font-size: 0.729vw*3;
       }
+   }
+}
+.advantages {
+   padding: 0 312px 200px;
+   @include adaptive-value("padding-right", 312, 30);
+   @include adaptive-value("padding-left", 312, 30);
+   
+}
+.advantages__title {
+@include adaptive-value("font-size", 48, 25);
+font-weight: 700;
+@include adaptive-value("line-height", 67, 30);
+text-align: center;
+}
+.advantages__row {
+   display: flex;
+   text-align: center;
+   @include adaptive-value("margin-right", -41, -10);
+   @include adaptive-value("margin-left", -41, -10);
+   flex-wrap: wrap;
+   align-items: center;
+}
+.advantages-column {
+   padding-top: 120px;
+   @include adaptive-value("padding-right", 41, 10);
+   @include adaptive-value("padding-left", 41, 10);
+   flex: 0 1 33.33%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.advantages-column__img {
+   width: 100px;
+   height: 100px;
+   img{
+      max-width: 100%;
+      height: 100%;
+   }
+}
+.advantages-column__title {
+   @include adaptive-value("font-size", 24, 20);
+   font-weight: 500;
+   @include adaptive-value("line-height", 34, 28);
+   margin: 60px 0 30px;
+}
+.advantages-column__text {
+   @include adaptive-value("font-size", 16, 14);
+font-weight: 400;
+   @include adaptive-value("line-height", 26, 16);
+opacity: 0.8;
+}
+@media (max-width:970px) {
+   .advantages-column {
+      flex: 0 1 50%;
+   }
+}
+@media (max-width:550px) {
+   .advantages-column {
+      flex: 0 1 100%;
    }
 }
